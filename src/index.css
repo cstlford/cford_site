@@ -1,0 +1,190 @@
+:root {
+  --color-background: #041522;
+  --color-gold: #e6d389da;
+  --color-teal: #18a096;
+  --color-teal-light: #27c7bb;
+  --color-teal-dark: #128178;
+  --color-coral: #e67e73;
+  --color-text-primary: #f2f2f2;
+  --color-text-secondary: #cccccc;
+  --color-text-muted: #999999;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-xxl: 3rem;
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+}
+
+/* Optional: Add a subtle background pattern or gradient */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+    circle at 80% 20%,
+    rgba(24, 160, 150, 0.08) 0%,
+    rgba(4, 21, 34, 0) 70%
+  );
+  z-index: 1;
+}
+
+/* Typography */
+
+.gold-text {
+  font-size: 3rem;
+  font-weight: 100;
+  background: linear-gradient(
+    24deg,
+    #ede9cb,
+    #d4b68c,
+    #d5c06a,
+    #d6c185,
+    #e6d389,
+    #b8ac70
+  );
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 5s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--color-gold);
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+p {
+  margin-bottom: var(--space-md);
+  color: var(--color-text-primary);
+}
+
+a {
+  color: var(--color-teal);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-teal-light);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--color-teal);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-teal-light);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-teal);
+  border: 1px solid var(--color-teal);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-teal);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
