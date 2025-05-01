@@ -25,12 +25,8 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
+
+              <a href={project.link} target="_blank">
                 View Project <span className="arrow">→</span>
               </a>
             </div>

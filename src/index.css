@@ -67,7 +67,7 @@ body::before {
     rgba(24, 160, 150, 0.08) 0%,
     rgba(4, 21, 34, 0) 70%
   );
-  z-index: 1;
+  z-index: -1;
 }
 
 /* Typography */
