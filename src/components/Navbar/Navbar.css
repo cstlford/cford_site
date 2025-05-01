@@ -29,12 +29,16 @@
 .logo {
   width: 100px;
   height: 100px;
-  background: url("../../assets/prof.png");
-  background-size: cover;
-  background-position: center;
   border-radius: 50%;
   transition: transform var(--transition-normal);
   border: 2px solid var(--color-teal);
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .logo:hover {

@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import github from "../../assets/github.svg";
 import linkedin from "../../assets/linkedin.svg";
+import profImage from "../../assets/prof.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -28,7 +29,9 @@ const Navbar = () => {
       </div>
       <div className="navbar-logo">
         <NavLink to="/">
-          <div className="logo"></div>
+          <div className="logo">
+            <img src={profImage} alt="Castle Ford" />
+          </div>
         </NavLink>
       </div>
       <div className="navbar-socials">
