@@ -17,7 +17,7 @@ export const projects = [
     description:
       "Full-stack web app that generates personalized workout and meal plans using generative AI. I led a 5-person team and built the frontend features, designed the database schema, and built the API.",
     tech: ["React", "Redux", "TypeScript", "Django", "MySQL", "JWT", "Figma"],
-    link: "https://shapeshiftness.netlify.app/",
+    link: "https://github.com/cstlford/shapeshift",
     image: shapeshift,
   },
   {
