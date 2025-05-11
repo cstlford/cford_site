@@ -27,7 +27,7 @@ const ResumeComponent: React.FC = () => {
         <ul className="resume-list">
           <li>
             <span className="resume-span">Languages:</span> JavaScript
-            (TypeScript), Python, SQL, HTML, CSS
+            (TypeScript), Java, Python, SQL, HTML, CSS
           </li>
           <li>
             <span className="resume-span">Tools/Frameworks:</span> React, Redux,
@@ -91,6 +91,24 @@ const ResumeComponent: React.FC = () => {
             </li>
           </ul>
         </div>
+      </section>
+      <section className="resume-section">
+        <h2>Certifications</h2>
+        <ul className="resume-list">
+          <li>
+            <span className="resume-span">IBM:</span> Introduction to Software,
+            Engineering Object Oriented Programming in Java
+          </li>
+          <li>
+            <span className="resume-span">Hugging Face:</span> AI Agents
+            Fundamentals
+          </li>
+          <li>
+            <span className="resume-span">DeepLearning.AI:</span> Supervised
+            Machine Learning: Regression and Classification, Advanced Learning
+            Algorithms
+          </li>
+        </ul>
       </section>
     </div>
   );

@@ -29,14 +29,14 @@
 }
 
 .resume-section h4 {
-  color: var(--color-text-primary);
+  color: var(--color-gold);
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
 
 .resume-italic {
-  color: var(--color-text-primary);
+  color: var(--color-coral);
   font-style: italic;
   margin-bottom: 0.7rem;
   font-size: 0.95rem;
@@ -55,7 +55,7 @@
 }
 
 .resume-span {
-  color: var(--color-teal-light);
+  color: var(--color-text-primary);
   font-weight: 500;
 }
 
