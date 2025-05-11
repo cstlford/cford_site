@@ -41,7 +41,25 @@ const ResumeComponent: React.FC = () => {
       </section>
 
       <section className="resume-section">
-        <h2>RELEVANT EXPERIENCE</h2>
+        <h2>EXPERIENCE</h2>
+        <div className="resume-experience">
+          <h3>Freelance Web Developer</h3>
+          <h3> Mar 2025 to present</h3>
+          <ul className="resume-list">
+            <li>
+              Designed and deployed websites for entrepreneurs, optimizing for
+              SEO, mobile responsiveness, and performance.
+            </li>
+            <li>
+              Created custom assets (logos, icons) and SEO-friendly content
+              structures, improving client site visibility.
+            </li>
+            <li>
+              Integrated SMTP form handling (serverless) and managed
+              DNS/deployments (Netlify).
+            </li>
+          </ul>
+        </div>
         <div className="resume-experience">
           <h3>University of Tennessee at Chattanooga</h3>
           <h3>Undergraduate Research Assistant – Sep 2023 to Jan 2025</h3>
@@ -51,7 +69,7 @@ const ResumeComponent: React.FC = () => {
               Collaborated with a PhD researcher to implement their eco-driving
               algorithm in Python, integrating it with PTV Vissim’s API to
               reduce intersection congestion by up to 45% through dynamic speed
-              and acceleration optimization. Generative AI Learning Web App
+              and acceleration optimization.
             </li>
           </ul>
           <p className="resume-italic">Generative AI Learning Web App</p>
